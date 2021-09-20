@@ -1,3 +1,5 @@
 # CountryKit
 
-A description of this package.
+A way to build country selection like [here](https://github.com/cs4alhaider/SearchView)
+
+
