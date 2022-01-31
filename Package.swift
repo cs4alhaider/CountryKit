@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
     name: "CountryKit",
     platforms: [
-            .iOS(SupportedPlatform.IOSVersion.v11),
+            .iOS(SupportedPlatform.IOSVersion.v13),
             .macOS(SupportedPlatform.MacOSVersion.v10_13)
         ],
     products: [

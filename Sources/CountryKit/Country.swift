@@ -50,7 +50,7 @@ public struct Country: Codable, Identifiable, Equatable {
     }
     
     public static var allCountries: [Country] {
-        Bundle.main.decode([Country].self, from: "countryCodes.json")
+        Bundle.countryKit.decode([Country].self, from: "countryCodes.json")
     }
     
     public static var currentCountry: Country? {
@@ -67,4 +67,10 @@ public extension UserDefaults {
     static var countryKit: UserDefaults = {
         return UserDefaults(suiteName: "net.alhaider.CountryKit") ?? standard
     }()
+}
+
+public extension Foundation.Bundle {
+    static var countryKit: Bundle {
+        return .module
+    }
 }
